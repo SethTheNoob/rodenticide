@@ -1,0 +1,122 @@
+/* ==========================================================================
+   RODENTICIDE BROCHURE THEME - matches the printed brochure
+   ==========================================================================
+   HOW TO EDIT: Colors and fonts are variables in :root. Change a value there
+   and the whole site updates. Section numbers below match the page order.
+   ========================================================================== */
+
+/* ---------- 1. THEME VARIABLES ---------- */
+:root {
+  --bg:     #e0ebd8;   /* pale sage page background (same as brochure) */
+  --forest: #34614b;   /* headings, borders, silhouettes */
+  --bark:   #5f4334;   /* brown used for animal silhouettes / hover */
+  --text:   #3f5348;   /* body text */
+  --white:  #ffffff;
+  --font-heading: "Outfit", "Trebuchet MS", Arial, sans-serif;
+  --font-body: "Inter", "Segoe UI", Arial, sans-serif;
+  --radius: 44px;      /* roundness of the brochure-style cards */
+}
+
+/* ---------- 2. BASE ---------- */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--bg); color: var(--text);
+       font-family: var(--font-body); font-weight: 300; line-height: 1.6; overflow-x: hidden; }
+h1, h2, h3 { font-family: var(--font-heading); color: var(--forest); line-height: 1.1; letter-spacing: -.02em; }
+h2 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 800; text-align: center; margin: 0 0 1rem; }
+h3 { font-size: 1.15rem; font-weight: 700; margin: 1.2rem 0 .3rem; }
+a { color: var(--forest); font-weight: 600; }
+a:hover { color: var(--bark); }
+section[id] { scroll-margin-top: 4.5rem; }   /* keeps headings clear of sticky nav */
+
+/* ---------- 3. HEADER / NAV ---------- */
+.site-header { position: sticky; top: 0; z-index: 20; display: flex; flex-wrap: wrap;
+  justify-content: space-between; align-items: center; gap: .5rem; padding: .7rem 1.5rem;
+  background: var(--forest); }
+.site-header a { color: var(--bg); text-decoration: none; font-weight: 600; }
+.site-header a:hover { color: var(--white); }
+.site-header nav a { margin-left: 1.2rem; }
+.brand { font-family: var(--font-heading); font-weight: 800; }
+
+/* ---------- 4. COVER / HERO ---------- */
+.cover { padding: 2.5rem 1rem 1rem; }
+.cover-card { position: relative; max-width: 760px; margin: 0 auto; min-height: 800px;
+  border: 2px solid var(--forest); border-radius: var(--radius); padding: 2.5rem 2rem; text-align: center; }
+.cover h1 { font-size: clamp(2.6rem, 8vw, 4.4rem); font-weight: 800; margin: 0 0 1.5rem; position: relative; z-index: 2; }
+.cover .button { position: relative; z-index: 2; }
+/* Decorative art on the cover; adjust width/right/bottom to reposition */
+.cover-tree  { position: absolute; left: 50%; transform: translateX(-50%); bottom: 1.5rem; width: 210px; }
+.cover-eagle { position: absolute; left: calc(50% + 70px); bottom: 300px; width: 60px; }
+.cover-fox   { position: absolute; right: 2rem; bottom: 1.2rem; width: 100px; }
+.cover-mouse { position: absolute; left: 2.5rem; bottom: 1.2rem; width: 40px; }
+
+/* ---------- 5. BUTTONS ---------- */
+.button { display: inline-block; padding: .65rem 1.5rem; background: var(--forest); color: var(--bg);
+  border-radius: 999px; text-decoration: none; font-weight: 600; transition: transform .2s, background .2s; }
+.button:hover { background: var(--bark); color: var(--white); transform: translateY(-2px); }
+.button.small { padding: .45rem 1rem; font-size: .9rem; margin-top: .5rem; }
+
+/* ---------- 6. PANELS (heading + rounded text bubble) ---------- */
+.panel { position: relative; max-width: 860px; margin: 3.5rem auto; padding: 0 1.25rem; }
+.bubble { border: 2px solid var(--forest); border-radius: var(--radius); padding: 1.8rem 2.2rem; }
+.bubble p { margin: 0 0 .8rem; text-align: center; }
+.bubble p:last-child { margin-bottom: 0; }
+.center { text-align: center; }
+
+/* Decorative silhouettes beside headings (hidden on small screens, see section 12) */
+.deco { pointer-events: none; }
+.panel .deco { position: absolute; z-index: 1; }
+.d-eagle { width: 130px; left: -60px; top: -40px; }
+.d-owl   { width: 80px;  right: 0; top: -85px; }
+.d-fox   { width: 120px; right: 0; top: -75px; }
+
+/* ---------- 7. ANIMAL PHOTOS (rounded shapes like the brochure) ---------- */
+.photo-title { text-align: center; margin-top: 2rem; }
+.photos { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 1.1rem; }
+.photos img { height: 150px; width: auto; max-width: 100%; object-fit: cover; border-radius: 45px; }
+
+/* ---------- 8. CHART ---------- */
+.chart { margin: 2rem 0 0; background: var(--white); border-radius: 36px; padding: 1rem; }
+.chart img { display: block; width: 100%; height: auto; }
+.chart figcaption { font-size: .85rem; text-align: center; margin-top: .6rem; }
+
+/* ---------- 9. HELP LIST ---------- */
+.help h3 { margin-top: 1rem; }
+.help ul, .contacts ul { margin: 0 0 .6rem; padding-left: 1.3rem; }
+.help li, .contacts li { margin-bottom: .4rem; }
+.logos { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 1.5rem; margin-top: 1.5rem; }
+.logos img { height: 110px; width: auto; border-radius: 28px; }
+
+/* ---------- 10. CONTACTS / DONATE ---------- */
+.contacts p { text-align: left; margin-top: 1rem; }
+.donate { display: flex; flex-wrap: wrap; justify-content: center; gap: 2.5rem; margin-top: .5rem; }
+.donate figure { margin: 0; text-align: center; }
+.donate figcaption { font-size: 1.05rem; margin-bottom: .4rem; }
+.donate img { width: 140px; height: auto; display: block; margin: 0 auto; }
+
+/* ---------- 11. SOURCES + FOOTER ---------- */
+.links { list-style: none; padding: 0 !important; margin: 0; }
+.links li { padding: .6rem 0; border-bottom: 1px dashed rgba(52,97,75,.35); }
+.links li:last-child { border: 0; }
+.links a { overflow-wrap: anywhere; }
+.links span { display: block; font-size: .85rem; opacity: .8; }
+
+.site-footer { margin-top: 5rem; text-align: center; }
+.forest-row { position: relative; max-width: 900px; margin: 0 auto; height: 90px; }
+.forest-row img { position: absolute; bottom: 0; }
+.f-hawk { left: 4%; width: 60px; bottom: 30px !important; }
+.f-eagle { left: 38%; width: 120px; }
+.f-coyote { right: 8%; width: 95px; }
+/* Tree line along the bottom, built from the brochure's forest art (repeats sideways) */
+.forest { height: 100px; background: url("images/deco-forest.png") repeat-x bottom center; background-size: auto 100px; }
+.site-footer p { margin: 0; padding: .8rem; background: var(--forest); color: var(--bg); font-size: .9rem; }
+
+/* ---------- 12. SMALL SCREENS ---------- */
+@media (max-width: 760px) {
+  .panel .deco { display: none; }              /* hide side silhouettes on phones */
+  .bubble { padding: 1.3rem 1.2rem; border-radius: 32px; }
+  .cover-card { min-height: 760px; }
+  .cover-fox { width: 70px; }
+  .photos img { height: 110px; }
+  .site-header nav a:first-child { margin-left: 0; }
+}

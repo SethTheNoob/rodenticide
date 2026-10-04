@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!--
+  ==========================================================================
+  RODENTICIDE IN YOUR COMMUNITY - single-page site
+  ==========================================================================
+  FILES:  index.html (content) | styles.css (look & feel) | images/ (all art)
+
+  HOW TO EDIT:
+  - Each section sits between a banner comment like "SECTION: ...".
+  - Change only the text BETWEEN tags, e.g. <p>THIS TEXT</p>.
+  - Look for comments starting with "EDIT:" for the most common updates.
+  - Decorative animal silhouettes are <img class="deco ..."> tags. They are
+    purely visual (alt=""), so you can move/delete them without losing content.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- EDIT: Browser tab title + search-engine description -->
+  <title>Rodenticide in Your Community</title>
+  <meta name="description" content="How rodenticides harm wildlife in your community, what can be done, and how you can help.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦊</text></svg>">
+  <!-- Fonts (optional; the CSS has fallbacks if these are blocked) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@700;800&family=Inter:wght@300;400;600&display=swap">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ====================== SECTION: HEADER / NAV ======================
+       EDIT: href="#id" jumps to the section that has that id. -->
+  <header class="site-header">
+    <a class="brand" href="#top">Rodenticide in Your Community</a>
+    <nav>
+      <a href="#learn">Learn</a>
+      <a href="#results">Results</a>
+      <a href="#help">Help</a>
+      <a href="#contacts">Contacts</a>
+    </nav>
+  </header>
+
+  <main id="top">
+
+    <!-- ====================== SECTION: COVER / HERO ======================
+         The big rounded title card with the tree, eagle, fox and mouse. -->
+    <section class="cover">
+      <div class="cover-card">
+        <h1>Rodenticide<br>in<br>Your<br>Community</h1>
+        <a class="button" href="#learn">Learn more</a>
+        <!-- Decorative art (green silhouettes) -->
+        <img class="deco cover-eagle" src="images/deco-eagle-dive.png" alt="">
+        <img class="deco cover-tree"  src="images/deco-tree.png" alt="">
+        <img class="deco cover-fox"   src="images/deco-fox-green.png" alt="">
+        <img class="deco cover-mouse" src="images/deco-mouse.png" alt="">
+      </div>
+    </section>
+
+    <!-- ====================== SECTION: WHAT ARE RODENTICIDES ====================== -->
+    <section id="learn" class="panel">
+      <img class="deco d-eagle" src="images/deco-eagle-soaring.png" alt="">
+      <h2>What are rodenticides?</h2>
+      <div class="bubble">
+        <p>Rodenticides are pesticides specifically formulated to kill rats. Most rodenticides are anti-coagulants, meaning they prevent blood from clotting, which causes internal bleeding. Jonathan Evans, a senior attorney and environmental health legal director at the Center for Biological Diversity, describes this kind of pesticide as &ldquo;a bucket of toxic waste.&rdquo; It takes about 6-12 days for a rat to die after consuming the poison, which makes the rats sluggish and easy prey while ensuring a slow and excruciating death.</p>
+      </div>
+    </section>
+
+    <!-- ====================== SECTION: NOT PRACTICAL ====================== -->
+    <section class="panel">
+      <img class="deco d-owl" src="images/deco-owl.png" alt="">
+      <h2>Why are rodenticides not practical?</h2>
+      <div class="bubble">
+        <p>Many rat populations have developed genetic resistance to first-generation anticoagulants (like warfarin), meaning the poison no longer disrupts their blood clotting. Additionally, anticoagulants take several days to work, which means that rats will have time to breed more rats until they are killed by the poison. If a rat eats a sub-lethal dose and feels sick, it will associate the sickness with the bait and stop eating it, ultimately surviving the exposure.</p>
+      </div>
+    </section>
+
+    <!-- ====================== SECTION: BAD FOR OTHER ANIMALS + PHOTOS ====================== -->
+    <section class="panel">
+      <h2>Why are rodenticides bad for other animals?</h2>
+      <div class="bubble">
+        <p>This poison does not simply vanish after a poisoned rat is consumed by another animal. Rodenticide&rsquo;s blood thinning transfers up the food chain each time prey that has been poisoned is consumed by a predator. As previously mentioned, rodenticides are slow killers, which means they make rats weaker and easier prey. This means that in your neighborhood screech owls, hawks, raptors, cats, dogs, foxes, and raccoons may be susceptible to rat poison if someone employs rodenticides.</p>
+      </div>
+      <!-- EDIT: To add a photo, copy one <img> line below, change src and alt.
+           Keep alt text descriptive for screen readers. -->
+      <h3 class="photo-title">Animals Affected by Rodenticide:</h3>
+      <div class="photos">
+        <img src="images/photo-fox.jpg"         alt="Red fox standing in grass">
+        <img src="images/photo-screech-owl.jpg" alt="Eastern screech owl perched on a branch">
+        <img src="images/photo-barred-owl.jpg"  alt="Barred owl perched on a mossy log">
+        <img src="images/photo-puppy.jpg"       alt="Jack Russell terrier puppy on grass">
+        <img src="images/photo-raccoon.jpg"     alt="Raccoon climbing a tree">
+        <img src="images/photo-cat.jpg"         alt="Tabby cat sitting in tall grass">
+      </div>
+    </section>
+
+    <!-- ====================== SECTION: WHAT HAPPENS ====================== -->
+    <section class="panel">
+      <h2>What happens to animals that consume poisoned rats?</h2>
+      <div class="bubble">
+        <p>Secondhand poisoning can cause lethargy, a lack of blood clotting, bruising, and lethal neurological failure. This lack of blood clotting causes them to bleed uncontrollably, both internally into their organs, and externally from the nose and mouth. The destruction of the nervous system and brain tissue causes seizures, tremors, and paralysis.</p>
+      </div>
+    </section>
+
+    <!-- ====================== SECTION: WHAT CAN BE DONE ====================== -->
+    <section class="panel">
+      <img class="deco d-fox" src="images/deco-fox-prey.png" alt="">
+      <h2>What can be done?</h2>
+      <div class="bubble">
+        <p>Animals that have consumed poisoned rats need immediate care. Vets treat these cases with decontamination (if recent) and a long-term prescription of vitamin K1 therapy, sometimes requiring blood or plasma transfusions for severe blood loss. If animals remain untreated for too long, there will be intensive internal bleeding, which can be untreatable.</p>
+      </div>
+    </section>
+
+    <!-- ====================== SECTION: WHAT ELSE CAN YOU DO + CHART ====================== -->
+    <section id="results" class="panel">
+      <h2>What else can you do?</h2>
+      <div class="bubble">
+        <p>Below is a chart showing the research collected from an experiment testing how rat populations could be expected to react to anticoagulant poison (based on previously collected field numbers) versus how they could be expected to react to fertility control drugs. Fertility control drugs are food-flavored drugs that block reproduction abilities in both male and female rats. They do not transfer through the food chain, unlike anticoagulant rat poisons. Consider using fertility controllers like SenesTech or ContraPest, as they do not have negative effects on other animals and, as seen on the chart, control rat populations better than traditional poisons. It is also important to recognize why rats are in a certain space. Limit access to areas like sheds, and be sure to properly dispose of trash and maintain dumpsters to ensure there is a lack of an area that rats will flock to. Remember rats are in need of a habitat, and they choose specific places for specific reasons! Reduce all welcoming areas, and you are less likely to fester rats.</p>
+      </div>
+      <!-- EDIT: To update the chart, replace images/rodent-control-chart.png -->
+      <figure class="chart">
+        <img src="images/rodent-control-chart.png"
+             alt="Chart of estimated rats per week over about 34 weeks. With fertility control, the average rat count falls from 230 to about 20. Under the traditional poison model, counts dip early, then climb back to about 250."
+             width="1024" height="594">
+        <figcaption>Green: average rats using actual fertility control data. Red: average rats expected using the traditional poison model. Source: FYXX Foundation.</figcaption>
+      </figure>
+    </section>
+
+    <!-- ====================== SECTION: HOW CAN YOU HELP ====================== -->
+    <section id="help" class="panel">
+      <h2>How can you help?</h2>
+      <div class="bubble help">
+        <h3>Advocate for animals!</h3>
+        <ul><li>Tell other friends and family about the dangers of rodenticide. Many people aren&rsquo;t aware of their horrifying secondary effects.</li></ul>
+        <h3>Use other methods!</h3>
+        <ul><li>Don&rsquo;t use anticoagulant rat poisons at your home or business. You&rsquo;re not just killing rats; you&rsquo;re killing your community of foxes, owls, and raccoons!</li></ul>
+        <h3>Help natural rat predators.</h3>
+        <ul><li>Drive safely, minding wildlife like foxes and raccoons. They naturally take care of rats without the need for poisons! Set up nest boxes for raptors in your community. For building plans or auction information, contact Raptor Trust!</li></ul>
+        <h3>Support those who help with rodenticides!</h3>
+        <ul><li>Animal rehabilitation centers are essential for helping wildlife in need of special help. Rodenticide affected animals need a special amount of care, which can be very expensive. Donations can be very helpful! Donate to Cedar Run or Raptor Trust today! See the contacts page for more information.</li></ul>
+        <!-- Partner logos -->
+        <div class="logos">
+          <img src="images/logo-cedar-run.png" alt="Woodford Cedar Run Wildlife Refuge logo">
+          <img src="images/logo-raptor-trust.png" alt="The Raptor Trust logo">
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== SECTION: CONTACTS ======================
+         EDIT: Phone numbers use tel: links so phones can tap-to-call.
+         The QR codes are images; the buttons beside them are the same links. -->
+    <section id="contacts" class="panel">
+      <h2>Contacts</h2>
+      <div class="bubble contacts">
+        <h3 class="center">Found a potentially rodenticide poisoned animal?</h3>
+
+        <p><strong>Are you near Medford, NJ?</strong></p>
+        <ul>
+          <li>Contact Cedar Run, an environmental nonprofit organization dedicated to the preservation of New Jersey&rsquo;s wildlife and habitats through education, conservation, and rehabilitation.</li>
+          <li>Reach out via their hospital at <a href="tel:+18569833329">856-983-3329</a> ext. 107 for more species-specific advice.</li>
+        </ul>
+
+        <p><strong>Are you near Millington or Long Hill Township, NJ?</strong></p>
+        <ul>
+          <li>Contact Raptor Trust, a nonprofit bird rehabilitation center that works hard to care for raptors and other birds in NJ.</li>
+          <!-- NOTE: the printed brochure showed 908-647-235 (one digit missing);
+               this is the Raptor Trust infirmary number listed on their website. -->
+          <li>Call them at <a href="tel:+19086472353">908-647-2353</a> to reserve an appointment.</li>
+        </ul>
+
+        <h3 class="center">How can I donate?</h3>
+        <div class="donate">
+          <figure>
+            <figcaption>Raptor Trust Donation</figcaption>
+            <a href="https://www.theraptortrust.org/donate" target="_blank" rel="noopener">
+              <img src="images/qr-raptor-trust.png" alt="QR code linking to the Raptor Trust donation page"></a>
+            <a class="button small" href="https://www.theraptortrust.org/donate" target="_blank" rel="noopener">Donate to Raptor Trust</a>
+          </figure>
+          <figure>
+            <figcaption>Cedar Run Donation</figcaption>
+            <a href="https://www.cedarrun.org/support/donate/" target="_blank" rel="noopener">
+              <img src="images/qr-cedar-run.png" alt="QR code linking to the Cedar Run donation page"></a>
+            <a class="button small" href="https://www.cedarrun.org/support/donate/" target="_blank" rel="noopener">Donate to Cedar Run</a>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================== SECTION: SOURCES ======================
+         EDIT: To add a link, copy one <li>, then change href and text. -->
+    <section id="sources" class="panel">
+      <h2>Learn More</h2>
+      <div class="bubble">
+        <ul class="links">
+          <li><a href="https://raptorsarethesolution.org/poison-free-by-2023/" target="_blank" rel="noopener">Poison Free by 2023</a> <span>raptorsarethesolution.org</span></li>
+          <li><a href="https://cwhl.vet.cornell.edu/resource/rodenticide-toxicity" target="_blank" rel="noopener">Rodenticide Toxicity</a> <span>Cornell Wildlife Health Lab</span></li>
+          <li><a href="https://www.audubon.org/magazine/internet-has-rat-poison-problem" target="_blank" rel="noopener">The Internet Has a Rat Poison Problem</a> <span>Audubon Magazine</span></li>
+          <li><a href="https://www.merckvetmanual.com/toxicology/rodenticide-poisoning/anticoagulant-rodenticide-poisoning-in-animals" target="_blank" rel="noopener">Anticoagulant Rodenticide Poisoning in Animals</a> <span>Merck Veterinary Manual</span></li>
+          <li><a href="https://nycbirdalliance.org/our-work/conservation/urban-raptors/rodenticides" target="_blank" rel="noopener">Urban Raptors: Rodenticides</a> <span>NYC Bird Alliance</span></li>
+          <!-- ADD NEW LINKS ABOVE THIS LINE -->
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <!-- ====================== SECTION: FOOTER (forest border) ====================== -->
+  <footer class="site-footer">
+    <div class="forest-row" aria-hidden="true">
+      <img src="images/deco-hawk.png" alt="" class="f-hawk">
+      <img src="images/deco-eagle-low.png" alt="" class="f-eagle">
+      <img src="images/deco-coyote.png" alt="" class="f-coyote">
+    </div>
+    <div class="forest" role="presentation"></div>
+    <p>Chart data source: FYXX Foundation.</p>
+  </footer>
+</body>
+</html>
