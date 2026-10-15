@@ -120,3 +120,6 @@ section[id] { scroll-margin-top: 4.5rem; }   /* keeps headings clear of sticky n
   .photos img { height: 110px; }
   .site-header nav a:first-child { margin-left: 0; }
 }
+/* ---------- COVER BYLINE ---------- */
+.byline { position: relative; z-index: 2; margin: -.5rem 0 1.5rem; font-family: var(--font-heading);
+  font-weight: 700; color: var(--forest); }
